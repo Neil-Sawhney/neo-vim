@@ -4,6 +4,10 @@ set wrap
 aunmenu PopUp.How-to\ disable\ mouse
 aunmenu PopUp.-1-
 
+call plug#begin('~/AppData/local/nvim/plugged')
+Plug 'tpope/vim-surround'
+call plug#end()
+
 if(exists("g:vscode"))
     nnoremap zM :call VSCodeNotify('editor.foldAll')<CR>
     nnoremap zR :call VSCodeNotify('editor.unfoldAll')<CR>
