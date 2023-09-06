@@ -6,6 +6,7 @@ aunmenu PopUp.-1-
 
 call plug#begin('~/AppData/local/nvim/plugged')
 Plug 'tpope/vim-surround'
+Plug 'itchyny/lightline.vim'
 call plug#end()
 
 if(exists("g:vscode"))
